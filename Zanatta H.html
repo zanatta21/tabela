@@ -1,0 +1,67 @@
+<table border="0">
+  <tr>
+    <td>
+      <img src="004.avif" width="200" height="150">
+    </td>
+
+    <td align="center">
+      <video width="300" controls loop>
+        <source src="002.mp4" type="video/mp4">
+      </video>
+    </td>
+  </tr>
+
+  <!-- LINHA: CELULA 3 e 4 -->
+  <tr>
+    <!-- CELULA 3 -->
+    <td align="center">
+      <div class="wrapper">
+        <a href="#" onclick="toggle('c4'); return false;">
+          <span>Aperte aqui!</span>
+        </a>
+      </div>
+    </td>
+
+    <!-- CELULA 4 -->
+    <td align="center" id="c4" hidden>
+      <img src="005.jpg" width="200" height="150">
+    </td>
+  </tr>
+
+  <!-- LINHA: CELULA 5 e 6 -->
+  <tr>
+    <td align="center">
+      <div class="wrapper">
+        <a href="#" onclick="toggle('c6'); return false;">
+          <span>Aperte aqui!</span>
+        </a>
+      </div>
+    </td>
+
+    <td align="center" id="c6" hidden>
+      <img src="006.webp" width="200" height="150">
+    </td>
+  </tr>
+
+  <!-- LINHA: CELULA 7 e 8 -->
+  <tr>
+    <td align="center">
+      <div class="wrapper">
+        <a href="009.avif" onclick="toggle('c8'); return false;">
+          <span>Aperte aqui!</span>
+        </a>
+      </div>
+    </td>
+
+    <td align="center" id="c8" hidden>
+      <img src="007.jpg" width="200" height="150">
+    </td>
+  </tr>
+</table>
+
+<script>
+  function toggle(id) {
+    const celula = document.getElementById(id);
+    celula.hidden = !celula.hidden;
+  }
+</script>
